@@ -47,3 +47,46 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+# --------------------------------------------------
+# Project-specific exclusions
+# Xenium spatial transcriptomics repository
+# --------------------------------------------------
+
+# macOS
+.DS_Store
+
+# R session / temporary files
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# renv local package library
+# Keep renv.lock in the repository
+renv/library/
+renv/staging/
+
+# Large R objects
+*.rds
+*.RDS
+*.rda
+*.RData
+*.qs
+
+# Large single-cell / spatial data objects
+*.h5
+*.h5ad
+*.loom
+
+# Xenium raw and processed data directories
+data/raw/
+data/processed/
+raw_data/
+processed_data/
+xenium_raw/
+xenium_data/
+
+# Temporary files
+*.tmp
+*.temp
+*~
