@@ -1,97 +1,106 @@
-# History files
+# --------------------------------------------------
+# R / RStudio
+# --------------------------------------------------
+
+# History / session files
 .Rhistory
 .Rapp.history
-
-# Session Data files
 .RData
 .RDataTmp
-
-# User-specific files
 .Ruserdata
 
-# Example code in package build process
-*-Ex.R
-
-# Output files from R CMD build
-/*.tar.gz
-
-# Output files from R CMD check
-/*.Rcheck/
-
-# RStudio files
+# RStudio
 .Rproj.user/
 
-# produced vignettes
-vignettes/*.html
-vignettes/*.pdf
+# R environment variables
+.Renviron
 
-# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
-.httr-oauth
+# Package build / check outputs
+*-Ex.R
+/*.tar.gz
+/*.Rcheck/
 
-# knitr and R markdown default cache directories
+# R Markdown / knitr temporary files
 *_cache/
 /cache/
-
-# Temporary files created by R markdown
 *.utf8.md
 *.knit.md
 
-# R Environment Variables
-.Renviron
+# OAuth / connection files
+.httr-oauth
 
-# pkgdown site
-docs/
+# RStudio Connect
+rsconnect/
 
-# translation temp files
+# Translation temporary files
 po/*~
 
-# RStudio Connect folder
-rsconnect/
 # --------------------------------------------------
-# Project-specific exclusions
-# Xenium spatial transcriptomics repository
+# macOS / temporary files
 # --------------------------------------------------
 
-# macOS
 .DS_Store
+*.tmp
+*.temp
+*~
 
-# R session / temporary files
-.Rhistory
-.RData
-.Ruserdata
-.Rproj.user/
-
-# renv local package library
+# --------------------------------------------------
+# renv
 # Keep renv.lock in the repository
+# --------------------------------------------------
+
 renv/library/
 renv/staging/
 
+# --------------------------------------------------
 # Large R objects
+# --------------------------------------------------
+
 *.rds
 *.RDS
 *.rda
 *.RData
 *.qs
 
+# Approved small publication-reference artifact
+!data/reference/figure5D_historical_pathway_modules.rds
+
+# --------------------------------------------------
 # Large single-cell / spatial data objects
+# --------------------------------------------------
+
 *.h5
 *.h5ad
 *.loom
 
-# Xenium raw and processed data directories
+# --------------------------------------------------
+# Xenium raw / processed / local data
+# --------------------------------------------------
+
 data/raw/
 data/processed/
+data/per_core/
+
 raw_data/
 processed_data/
 xenium_raw/
 xenium_data/
 
-# Temporary files
-*.tmp
-*.temp
-*~
-# Private manuscript provenance / clinical-response metadata
-private_provenance/
+# Core-coordinate files remain local unless
+# explicitly approved for public release
+data/core_coordinates/
 
+# --------------------------------------------------
+# Private manuscript provenance / clinical metadata
+# --------------------------------------------------
+
+private_provenance/*
+!private_provenance/README.md
+
+# --------------------------------------------------
 # Generated analysis outputs
-results/
+# Keep only the placeholder file
+# --------------------------------------------------
+
+results/*
+!results/.gitkeep
