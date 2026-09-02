@@ -1,4 +1,4 @@
-# NF1 melanoma Xenium spatial transcriptomics — manuscript reproduction code
+# NF1 mutant melanoma Xenium spatial transcriptomics — manuscript reproduction code
 
 This repository contains the cleaned Xenium/spatial-transcriptomics code used to reproduce the manuscript analyses for **“Genotype-Driven Tumor Ecosystems Drive Immune Evasion and Immunotherapy Resistance in Melanoma.”**
 
