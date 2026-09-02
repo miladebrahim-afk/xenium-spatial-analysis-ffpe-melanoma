@@ -90,3 +90,8 @@ xenium_data/
 *.tmp
 *.temp
 *~
+# Private manuscript provenance / clinical-response metadata
+private_provenance/
+
+# Generated analysis outputs
+results/
